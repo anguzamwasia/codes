@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Maize Performance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">ABOUT US</a></li>
+            <li><a href="dashboard.html">FARMER'S DASHBOARD</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="sign-in">SIGN IN</button>
+            <button class="sign-up">SIGN UP</button>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <h2 class="blog-title">Welcome to Our Blog</h2>
+        <p class="blog-description">
+            Explore topics on maize performance, sustainable farming, and more.
+        </p>
+
+        <!-- Blog Grid -->
+        <div class="blog-grid">
+            <!-- Blog 1 -->
+            <article class="blog-card">
+                <img src="statics/images/Adopting Sustainable Farming Practices.jpg" alt="Sustainable Farming">
+                <h3>Adopting Sustainable Farming Practices</h3>
+                <p>
+                    Sustainable farming is essential to counter the effects of soil degradation and climate change. 
+                    Learn how farmers are adopting eco-friendly practices for better yields and long-term productivity.
+                </p>
+                <button class="btn">Read More</button>
+                <button class="btn">Comments</button>
+            </article>
+
+            <!-- Blog 2 -->
+            <article class="blog-card">
+                <img src="statics/images/Climate Change and Its Effects.jpg" alt="Climate Change">
+                <h3>Climate Change and Its Effects on Agriculture</h3>
+                <p>
+                    Climate change has disrupted farming patterns worldwide. Discover how Kenyan farmers are adapting 
+                    to unpredictable weather and ensuring food security.
+                </p>
+                <button class="btn">Read More</button>
+                <button class="btn">Comments</button>
+            </article>
+        </div>
+
+        <!-- Hidden Blogs -->
+        <div id="hidden-blogs" class="blog-grid hidden">
+            <!-- Blog 3 -->
+            <article class="blog-card">
+                <img src="statics/images/Managing Pests and Diseases in Maize Farming.jpg" alt="Pests and Diseases">
+                <h3>Managing Pests and Diseases in Maize Farming</h3>
+                <p>
+                    Pests like the Fall Armyworm and diseases such as Maize Lethal Necrosis pose significant threats. 
+                    Here’s how farmers are combating these challenges.
+                </p>
+                <button class="btn">Read More</button>
+                <button class="btn">Comments</button>
+            </article>
+
+            <!-- Blog 4 -->
+            <article class="blog-card">
+                <img src="statics/images/Modern Agricultural Practices in Kenya.jpg" alt="Modern Agriculture">
+                <h3>Modern Agricultural Practices in Kenya</h3>
+                <p>
+                    Technology is transforming agriculture in Kenya. From precision farming to drone surveillance, 
+                    explore the modern methods revolutionizing farming.
+                </p>
+                <button class="btn">Read More</button>
+                <button class="btn">Comments</button>
+            </article>
+        </div>
+
+        <!-- Read More Blogs Button -->
+        <button id="read-more-blogs" class="btn">Read More Blogs</button>
+
+        <!-- Add Blog Form -->
+        <section id="add-blog-section">
+            <h3>Add Your Blog</h3>
+            <form id="add-blog-form">
+                <input type="text" id="blog-title" placeholder="Blog Title" required>
+                <textarea id="blog-content" placeholder="Blog Content" rows="5" required></textarea>
+                <input type="file" id="blog-image" accept="image/*">
+                <button type="submit" class="btn">Add Blog</button>
+            </form>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

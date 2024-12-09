@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Include the navigation bar here -->
+    </nav>
+    <section class="signup-section">
+        <h1>Sign Up</h1>
+        <form action="welcome.html" method="post" enctype="multipart/form-data">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <label for="profile-pic">Upload Your Profile Picture:</label>
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+</body>
+</html>
